@@ -1,0 +1,17 @@
+
+public class random_Number_int_high 
+{
+	public int GetANumber_Between_1_and_10()
+	{
+		int random1;
+		random1 = (int)(Math.random()*10);
+		return random1;
+	}
+	public int GetANumber(int high)
+	{
+		int high1;
+		high1 = (int)(Math.random()*200);
+		return high1;
+		
+	}
+}

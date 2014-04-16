@@ -1,0 +1,51 @@
+import java.util.Scanner;
+
+public class Guess_numb_INt_HIGH {
+
+	public static void main(String[] args) {
+		int cont = 1;
+		Scanner input;
+		//int again = 0;
+		while (cont != 0) {
+
+			random_Number_int_high random_number = new random_Number_int_high();
+			int answer;
+			input = new Scanner(System.in);
+
+			System.out.println("enter high:");
+			int high = input.nextInt();
+			random_number.GetANumber(high);
+
+			int random1 = random_number.GetANumber_Between_1_and_10();
+
+			int high1 = random_number.GetANumber(high);
+
+			System.out.printf("guess the number between 0 and %d",high );
+			answer = input.nextInt();
+
+			if ((answer != random1) || (answer != high1)) {
+				if ((answer > random1) || (answer > high1)) {
+					System.out
+							.printf("too high\n the system number is %d \n thanks for playing",
+									random1);
+
+				} else if ((answer < random1) || (answer < high1)) {
+					System.out
+							.printf("too low\n the system number is %d \n thanks for playing",
+									random1);
+
+				}
+			}
+
+			if ((answer == random1) || (answer == high1)) {
+				System.out
+						.println("congrats you guessed correctly\n thanks for playing");
+			}
+			System.out
+					.printf("do you want to play again 1 for yes and 0 for no");
+			//again = input.nextInt();
+
+		}
+
+	}
+}

@@ -1,0 +1,38 @@
+import java.util.Scanner;
+public class GuessNUmber_with_Random 
+{
+
+	public static void main(String[] args)
+	{
+		Random_Number random_number= new Random_Number();
+		int answer;
+		Scanner input = new Scanner(System.in);	
+		int random1= random_number.GetANumber_Between_1_and_10();
+		
+		
+
+		System.out.println("guess the number between 0 and 10");
+		answer = input.nextInt();
+		
+		if(answer != random1)
+		{
+			if (answer > (random1))
+			{
+				System.out.printf("too high\n the system number is %d \n thanks for playing", random1);
+				
+			}
+			else if(answer < (random1))
+			{
+				System.out.printf("too low\n the system number is %d \n thanks for playing", random1);
+			
+			}
+		}
+				
+		if (answer == random1)
+		{
+			System.out.println("congrats you guessed correctly\n thanks for playing");
+		}
+
+	}
+
+}

@@ -1,0 +1,22 @@
+import java.util.Scanner;
+
+public class RandomNumber {
+
+	Scanner input;
+	int answer;
+	private int HighNumber;
+
+	public int GetANumberHigh(int high) {
+		HighNumber = high;
+		high = 0 + (int)(Math.random()*HighNumber);
+		return high;
+	}
+
+	private int LowNumber;
+
+	public int GetANumberlow(int low) {
+		LowNumber = low;
+		low = (int)(Math.random()*LowNumber);
+		return low;
+	}
+}

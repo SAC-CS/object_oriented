@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Guess_a_NUMber_SetNumber 
+{
+	
+	static Scanner input = new Scanner(System.in);
+	public static void main(String[] args) 
+	{
+		int answer;
+		int low;
+		int high;
+		int random1;
+		
+		
+		RandomNumber_SetNumbers set_numbers = new RandomNumber_SetNumbers();
+		
+	
+		
+		System.out.println("please choose a low number");
+		low = input.nextInt();
+		set_numbers.SetLowNumber( low );
+		
+		System.out.println("please choose a high number");
+		high = input.nextInt();
+		set_numbers.SetHighNumber(high);
+		
+		random1 = set_numbers.GetANumber();
+		
+		System.out.printf("please choose a numeber between %d ", low);
+		System.out.printf("and %d", high);
+		answer = input.nextInt();
+		
+		if(random1 == answer){
+			System.out.println(" you win");
+			System.out.printf("the comp choose %d", random1);
+		}
+		else if(random1 != answer){
+			System.out.println("you lose");
+			System.out.printf("the comp choose %d", random1);
+		}
+	}
+
+}

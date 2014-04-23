@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class random_number_construct_and_Method 
+{
+	Scanner input = new Scanner(System.in);
+	int highnum;
+	
+	public random_number_construct_and_Method (int high)
+	{
+		highnum = high;
+		
+	}
+	public int GetANumber(){
+		int random1;
+		random1 = (int)(Math.random()*highnum);
+		return random1;
+	}
+	
+}

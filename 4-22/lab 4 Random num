@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Random_NUM 
+{
+	int low;
+	int random1;
+	int high;
+	Scanner input = new Scanner(System.in);
+	
+	public Random_NUM(int lo, int hi)
+	{
+		low = lo;
+		high=hi;
+	}
+	public int GetLowNumber(){
+		return low;
+	}
+	public int GetHighNumber(){
+		return high;
+	}
+	public int GetANumber(){
+		random1 = (low) + (int)(Math.random()*(high-low));
+		return random1;
+	}
+}

@@ -1,0 +1,33 @@
+import java.util.Scanner;
+public class GuessNumber_constructor_method
+{
+
+	public static void main(String[] args) 
+	{
+		Scanner input = new Scanner(System.in);
+		int answer;
+		int random1;
+		int high;
+		
+		System.out.printf("please choose a high number");
+		high = input.nextInt();
+		random_number_construct_and_Method constructmethod = new random_number_construct_and_Method(high);
+		
+		random1 = constructmethod.GetANumber();
+		System.out.printf("please choose a number between 0 and %d\n", high);
+		answer = input.nextInt();
+		
+		if(random1 == answer){
+			System.out.println("you win");
+			System.out.printf("the comp choose %d", random1);
+		}
+		else if(random1 != answer){
+			System.out.println("you lose"); 
+			System.out.printf("the comp choose %d", random1);
+		}
+		
+		
+		
+	}
+
+}

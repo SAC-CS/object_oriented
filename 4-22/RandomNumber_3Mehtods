@@ -1,0 +1,23 @@
+import java.util.Scanner;
+
+public class Random_NUmber_3Methods {
+
+	Scanner input;
+	int answer;
+
+	public int GetANumber(int high, int low) {
+		int random1;
+		random1 = (low) + (int)(Math.random()*high);
+		return random1;
+	}
+	public int GetANumber(int high){
+		int random1;
+		random1 = (int)(Math.random()*high);
+		return random1;
+	}
+	public int GetANumber(){
+		int random1;
+		random1=(int)(Math.random()*10);
+		return random1;
+	}
+}

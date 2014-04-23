@@ -1,0 +1,43 @@
+import java.util.Scanner;
+
+public class Guess_number_3_Methods {
+
+	public static void main(String[] args) {
+		int cont = 1;
+		Scanner input;
+		while (cont != 0) {
+			RandomNumber randomnumber = new RandomNumber();
+			int answer;
+			int random1;
+			input = new Scanner(System.in);
+			random1 = randomnumber.GetANumber();
+
+			System.out.printf("please choose a number between 0 and 10");
+			answer = input.nextInt();
+
+			if (answer != random1) {
+				if (answer > (random1)) {
+					System.out
+							.printf("too high\n the system number is %d \n thanks for playing",
+									random1);
+
+				} else if (answer < (random1)) {
+					System.out
+							.printf("too low\n the system number is %d \n thanks for playing",
+									random1);
+
+				}
+			}
+
+			if (answer == random1) {
+				System.out
+						.println("congrats you guessed correctly\n thanks for playing\n");
+			}
+			System.out
+					.printf("do you want to play again 1 for yes and 0 for no");
+			cont = input.nextInt();
+		}
+
+	}
+
+}

@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class RandomNumber_SetNumbers {
+
+	Scanner input = new Scanner(System.in);
+	int lownum;
+	int highnumber;
+
+	
+	public int SetLowNumber(int low) {
+		
+		lownum = low;
+		return lownum;
+	}
+
+	public int SetHighNumber(int high) {
+		highnumber = high;
+		return highnumber;
+	}
+
+	public int GetANumber() {
+		
+		
+		int random1 = ((lownum) + (int) (Math.random() * (highnumber)));
+		return random1;
+	}
+
+}

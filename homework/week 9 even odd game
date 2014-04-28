@@ -37,3 +37,6 @@ public class Odd_Even_construct {
 	}
 
 }
+
+
+// Not sure why you created constructor with 2 paramerters? 

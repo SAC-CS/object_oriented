@@ -1,0 +1,16 @@
+public class Even_Odd_game_construct {
+	int random1;
+	String OddNum;
+	String EvenNum;
+
+	public Even_Odd_game_construct(String odd, String even) {
+		OddNum = odd;
+		EvenNum = even;
+	}
+
+	public int randomNum() {
+		random1 = (0) + (int) (Math.random() * (10));
+		return random1;
+	}
+
+}

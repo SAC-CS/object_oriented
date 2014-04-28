@@ -1,0 +1,39 @@
+import java.util.Scanner;
+
+public class Odd_Even_construct {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int random1;
+		String even;
+		String odd;
+		String answer;
+		
+		System.out.printf("the computer will choose an even or odd number. please guess either even or odd");
+		answer = input.next();
+		
+		Even_Odd_game_construct game = new Even_Odd_game_construct(answer, answer);
+		random1 = game.randomNum();
+
+		if (random1 % 2 == 0) {
+			if (answer.equals("odd")) {
+				System.out.println(" you lose");
+				System.out.printf("the computer choose %d", random1);
+			} else if (answer.equals("even")) {
+				System.out.println("congrats you win");
+				System.out.printf("the computer choose %d", random1);
+			}
+		}
+
+		if (random1 % 2 != 0) {
+			if (answer.equals("odd")) {
+				System.out.println("congrats you win");
+				System.out.printf("the computer choose %d", random1);
+			} else if (answer.equals("even")) {
+				System.out.println("you lose");
+				System.out.printf("the computer choose %d", random1);
+			}
+		}
+	}
+
+}

@@ -1,0 +1,15 @@
+import java.util.Scanner;
+public class dice_test {
+	
+	public static void main(String[] args) 
+	{
+		Dice throw_dice = new Dice();
+		int roll;
+		System.out.println("the computer will throw a dice");
+		
+		roll = throw_dice.Throw();
+		
+		System.out.printf("the dice rolled a %d", roll);
+	}
+
+}

@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public class dice_test {
+	
+	public static void main(String[] args) 
+	{
+		Dice throw_dice = new Dice();
+		int roll = 0;
+		int bounces;
+		Scanner input = new Scanner(System.in);
+		System.out.println("the computer will throw a dice");
+		System.out.println("plase choose the number of bounces");
+		bounces= input.nextInt();
+		
+		roll = throw_dice.Throw(bounces);
+		
+
+		
+		
+		
+		
+	}
+
+}

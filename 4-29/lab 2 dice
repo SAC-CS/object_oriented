@@ -1,0 +1,37 @@
+import java.util.Scanner;
+public class Dice {
+
+	int Throw;
+	int k;
+	int total;
+	int x= 0;
+	
+	public int m()
+	{
+		int m = Throw;
+		Throw = 1 + (int)(Math.random()*6);
+		System.out.printf("the comp generate %d\n", Throw);
+		return Throw;
+	}
+	public int Value() {
+		int value = Throw;
+		return value;
+	}
+	
+	public int Throw (int bounces){
+		
+		int k = bounces;
+		int m = Throw;
+		while (x < bounces)
+		{
+			Throw = 1 + (int)(Math.random()*6);
+			System.out.printf("the number the comp choose is %d\n", Throw);
+			System.out.printf("the number of boucnes is %d \n ", bounces);
+			total += Throw/bounces; 
+			System.out.printf(" the total is now %d\n", total);
+			x ++;
+		}
+		return bounces;
+	}
+
+}

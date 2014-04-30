@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Dice {
+
+	int Throw;
+	
+	public int Throw()
+	{
+		Throw = 1 + (int)(Math.random()*6);
+		System.out.printf("the comp generate %d\n", Throw);
+		return Throw;
+	}
+	public int Value() {
+		int value = Throw;
+		return value;
+	}
+
+}

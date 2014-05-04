@@ -1,0 +1,36 @@
+import java.util.Scanner;
+public class Dice {
+
+	int M_Throw;
+	int k;
+	int total;
+	int avg;
+	
+
+	public int Throw()
+	{
+		int Throw = M_Throw;
+		Throw = 1 + (int)(Math.random()*6);
+		System.out.printf("the comp generate %d\n", Throw);
+		return Throw;
+	}
+	public int Value() {
+		int value = M_Throw;
+		return value;
+	}
+	
+	public int Throw (int bounces){
+		
+		int k = bounces;
+		int m = M_Throw;
+		for ( int x = 0; x<bounces ; ++x)
+		{
+		M_Throw = 1 + (int)(Math.random()*6);
+		System.out.printf("dice rolled a %d\n", M_Throw);
+		total = total + M_Throw;
+		System.out.printf( "the total is %d\n",total);
+		}
+		return total;
+	}
+
+}

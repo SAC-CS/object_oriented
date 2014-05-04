@@ -1,0 +1,22 @@
+
+public class Dice_ 
+{
+	int x;
+	int y;
+	int total;
+	
+	public Dice_(int bounce)
+	{
+		x = bounce;
+	}
+	public int Throw(int bounces) {	
+		int total = 0;
+		for (int k = bounces; k >0; k--){
+			int die = (int) (1 + (Math.random() * 6));
+			System.out.printf("%d\n", die);
+			total = total + die;
+		}
+		return total;
+	}
+}
+

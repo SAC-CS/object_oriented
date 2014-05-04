@@ -1,36 +1,21 @@
 import java.util.Scanner;
-public class Dice {
+public class main_dice {
 
-	int M_Throw;
-	int k;
-	int total;
-	int avg;
-	
-
-	public int Throw()
+	public static void main(String[] args) 
 	{
-		int Throw = M_Throw;
-		Throw = 1 + (int)(Math.random()*6);
-		System.out.printf("the comp generate %d\n", Throw);
-		return Throw;
-	}
-	public int Value() {
-		int value = M_Throw;
-		return value;
-	}
-	
-	public int Throw (int bounces){
+		Scanner input = new Scanner(System.in);
+		int rolls;
+		int x;
+		System.out.printf("how many rolls do you want\n");
+		rolls = input.nextInt();
+		Dice_ Dice = new Dice_(rolls);
+		System.out.printf("the dice has rolled %d times\n", rolls);
+		x = Dice.Throw(rolls);
 		
-		int k = bounces;
-		int m = M_Throw;
-		for ( int x = 0; x<bounces ; ++x)
-		{
-		M_Throw = 1 + (int)(Math.random()*6);
-		System.out.printf("dice rolled a %d\n", M_Throw);
-		total = total + M_Throw;
-		System.out.printf( "the total is %d\n",total);
-		}
-		return total;
+		int average = x/rolls;
+		System.out.printf("the average is %d", average);
+		
+
 	}
 
 }

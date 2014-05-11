@@ -1,1 +1,13 @@
-later
+public class TRi_Dice 
+{	
+	public int Throw()
+	{
+	 int total = 0;
+	 for (int x = 1; x<2;x++)
+	 {
+		int roll = (int)(1 + Math.random()*6);
+		total = (total) + roll;
+	 }
+	 return total;
+	}
+

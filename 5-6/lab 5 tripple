@@ -17,3 +17,6 @@ public class TrippleDice extends Dice
 	
 	}
 }
+
+// YOu will need to call the Dice constructor to initialize 3 dices, or
+// the Throw method will need to call the base Dice.Throw with proper parameter to represents the 3 dices.

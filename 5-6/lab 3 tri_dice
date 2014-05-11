@@ -1,13 +1,30 @@
+
 public class TRi_Dice 
 {	
+	Dice d1;
+	Dice d2;
+	Dice d3;
+	
+	public TRi_Dice(int value)
+	{
+		d1 = new Dice(value);
+		d2 = new Dice(value);
+		d3 = new Dice(value);
+	}
 	public int Throw()
 	{
-	 int total = 0;
-	 for (int x = 1; x<2;x++)
-	 {
-		int roll = (int)(1 + Math.random()*6);
-		total = (total) + roll;
-	 }
-	 return total;
+		int avg;
+		 avg =((d1.Value()+d2.Value()+d3.Value())/3);
+		 return avg;
 	}
-
+	
+	public int Die1(){
+		return d1.Throw();
+	}
+	public int Die2(){
+		return d2.Throw();
+	}
+	public int Die3(){
+		return d3.Throw();
+	}
+}

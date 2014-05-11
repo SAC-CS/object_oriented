@@ -1,0 +1,26 @@
+
+public abstract class TrippleClassTest 
+{
+	public static void main(String[] args)
+	{
+		int d1;
+		int d2;
+		int d3;
+		int total;
+		
+		TrippleDice tripple = new TrippleDice();
+		
+		d1=tripple.Throw();
+		System.out.printf("die 1 rolled %d\n", d1);
+		d2=tripple.Throw();
+		System.out.printf("die 2 rolled %d\n", d2);
+		d3=tripple.Throw();
+		System.out.printf("die 3 rolled %d\n", d3);
+		
+		total = (d1+d2+d3)/3;
+		
+		System.out.printf("the avg is %d\n",total);
+		
+		
+	}
+}

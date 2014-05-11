@@ -1,0 +1,19 @@
+
+public class TrippleDice extends Dice
+{
+	
+	int x;
+	
+	public TrippleDice() {
+		;
+	}
+
+	@Override
+	public int Throw()
+	{
+		
+			int die = (int) (1 + (Math.random()*6));
+			return die;
+	
+	}
+}

@@ -1,0 +1,17 @@
+
+public class tri_dice_test {
+
+	public static void main(String[] args) 
+	{
+		TRi_Dice tri = new TRi_Dice();
+		
+		int d1 = tri.Throw();
+		int d2 = tri.Throw();
+		int d3 = tri.Throw();
+		System.out.printf("the dices rolled %d for d1\n %d for d2\n %d for d3\n ", d1, d2, d3);
+		
+		int avg = (d1+d2+d3)/3;
+		System.out.printf("the avg is %d", avg);
+	}
+
+}

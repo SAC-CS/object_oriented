@@ -3,15 +3,12 @@ public class tri_dice_test {
 
 	public static void main(String[] args) 
 	{
-		TRi_Dice tri = new TRi_Dice();
+		TRi_Dice tri = new TRi_Dice(6);
 		
-		int d1 = tri.Throw();
-		int d2 = tri.Throw();
-		int d3 = tri.Throw();
-		System.out.printf("the dices rolled %d for d1\n %d for d2\n %d for d3\n ", d1, d2, d3);
+		System.out.printf("d1 rolled %d\n d2 rolled %d\n d3 rolled %d\n", tri.Die1(),tri.Die2(),tri.Die3());
+		System.out.printf("the avg of the 3 dice is %d", tri.Throw());
 		
-		int avg = (d1+d2+d3)/3;
-		System.out.printf("the avg is %d", avg);
+		
 	}
 
 }

@@ -5,19 +5,5 @@ public class TrippleDice extends Dice
 	public TrippleDice(int dice) {
 		super(dice);
 	}
-   @Override
-	public int Throw()
-	{
-		int total = 0;
-		for(int x = 0; x<3; ++x)
-		{
-			int die = (int)(Math.random()*6);
-			System.out.println(die);
-			total = (total) + die;
-		}
-		System.out.printf("the total for the roll is %d\n", total);
 
-		return total;
-	}
-  	
 }

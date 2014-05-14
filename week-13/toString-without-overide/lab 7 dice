@@ -1,0 +1,50 @@
+public class Dice {
+	int x;
+	int y;
+	int z;
+
+	public Dice(int dice, int bounce) {
+		x = dice;
+		y = bounce;
+	}
+	public int Throw() {
+		int total = 0;
+		for (int b = x; b >0 ; b--) {
+			int die = (int) (1 + (Math.random() * 6));
+			System.out.printf("%d\n", die);
+			total = total + die;
+
+		}
+		System.out.printf("this is the total %d\n", total);
+		int avg = z;
+		z = total/3;
+		System.out.printf("the avg is %d\n",z);
+		return total;	}
+
+	public int Throw(int bounce) {
+		int total = 0;
+		for (int b = bounce; b >0; b--) {
+			int die = (int) (1 + (Math.random() * 6));
+			System.out.printf("%d\n", die);
+			total = total + die;
+
+		}
+		System.out.printf("this is the total %d\n", total);
+		return total;
+	}
+
+	public int total_rolls(int bounces) {
+		int t_rolls = 0;
+		for (int b = bounces; b > 0; b--) {
+			t_rolls = t_rolls + bounces;
+		}
+		System.out.printf("total rolls are %d\n", bounces);
+		return t_rolls;
+
+	}
+	public int Value()
+	{
+		return x;
+	}
+	
+}

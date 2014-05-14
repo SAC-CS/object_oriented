@@ -1,0 +1,23 @@
+import java.util.Scanner;
+public abstract class TrippleClassTest 
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		int dice;
+		int Throw;
+		int avg;
+		
+		dice = 3;
+		
+		TrippleDice tripple = new TrippleDice(dice);
+		
+		System.out.println("the dice rolled:");
+		Throw=tripple.Throw(dice);
+		
+		avg = Throw/3;
+		
+		System.out.printf("the avg is %d\n",avg);
+		
+	}
+}

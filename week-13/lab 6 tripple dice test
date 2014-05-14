@@ -4,13 +4,10 @@ public abstract class TrippleClassTest
 	public static void main(String[] args)
 	{
 		Scanner input = new Scanner(System.in);
-		int dice;
 		int Throw;
 		int avg;
 		
-		dice = 3;
-		
-		TrippleDice tripple = new TrippleDice(dice);
+		TrippleDice tripple = new TrippleDice(3);
 		
 		System.out.println("the dice rolled:");
 		Throw=tripple.Throw(dice);

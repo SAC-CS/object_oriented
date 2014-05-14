@@ -6,9 +6,15 @@ public class Dice {
 		x = dice;
 	}
 	public int Throw() {
-		x = 1 + (int) (Math.random() * 6);
-		return x;
-	}
+		int total = 0;
+		for (int b = 0; b <3 ; ++b) {
+			int die = (int) (1 + (Math.random() * 6));
+			System.out.printf("%d\n", die);
+			total = total + die;
+
+		}
+		System.out.printf("this is the total %d\n", total);
+		return total;	}
 
 	public int Throw(int dice) {
 		int total = 0;

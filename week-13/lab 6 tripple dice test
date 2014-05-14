@@ -10,7 +10,7 @@ public abstract class TrippleClassTest
 		TrippleDice tripple = new TrippleDice(3);
 		
 		System.out.println("the dice rolled:");
-		Throw=tripple.Throw(dice);
+		Throw=tripple.Throw();
 		
 		avg = Throw/3;
 		

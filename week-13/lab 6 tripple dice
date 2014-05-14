@@ -3,7 +3,7 @@ public class TrippleDice extends Dice
 {
 	
 	public TrippleDice(int dice) {
-		super(dice);
+		super(3);
 	}
 
 }

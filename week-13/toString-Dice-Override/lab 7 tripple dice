@@ -1,0 +1,10 @@
+
+public class TrippleDice extends Dice
+{
+	
+	public TrippleDice() {
+		super(3,1);
+	}
+
+  	
+}

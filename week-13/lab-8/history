@@ -1,0 +1,26 @@
+
+public class TriipleDIceHistory extends TrippleDice {
+	int [] array= new int [100];
+	int Throw;
+	String y="";
+	public TriipleDIceHistory (int value, int dice){
+		super(value);
+		Throw = dice;
+	}
+	public void history(int dice, int Throw)
+	{
+		for(int i = 0; i<Throw ; i++)
+		{
+			array[i]=Throw(dice);
+		}
+	}
+	@Override
+	public String toString()
+	{
+		String y = "History";
+		for (int i = 0; i < Throw ;  i++){
+			y = y + " " + (i + 1) + "="+array[i];
+		}
+		return y;
+	}
+}

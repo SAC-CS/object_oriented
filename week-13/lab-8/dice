@@ -87,3 +87,6 @@ public class Dice {
 				);
 	}
 }
+
+
+// You should not have the empty constructor if you do not need it.  Please remove.

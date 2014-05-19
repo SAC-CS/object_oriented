@@ -1,0 +1,21 @@
+mport java.util.Scanner;
+public abstract class TrippleClassTest 
+{
+	public static void main(String[] args)
+	{
+		Scanner input = new Scanner(System.in);
+		int die;
+		int Throw;
+		int avg;
+		int history;
+		
+		
+		System.out.println("please enter how many dices to use");
+		die = input.nextInt();
+		System.out.println("how many throws did you want");
+		Throw= input.nextInt();
+		TriipleDIceHistory tripple = new TriipleDIceHistory(die, Throw);
+		tripple.history(die, Throw);
+		System.out.println(tripple);
+	}
+}

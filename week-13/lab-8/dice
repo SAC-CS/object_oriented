@@ -1,0 +1,89 @@
+public class Dice {
+	int x;
+	int y;
+	int z;
+	int total;
+
+	
+	public Dice ()
+	{
+		
+	}
+	
+	public Dice (int dice){
+		dice = x;
+		int m = 1;
+		while (m <= x){
+			total += Throw();
+			m++;
+			System.out.printf("the sum is %d\n",total );
+		}
+	}
+	public Dice(int dice, int bounce) {
+		x = dice;
+		y = bounce;
+	}
+	public int Throw() {
+		total = 0;
+		for (int b = x; b >0 ; b--) {
+			int die = (int) (1 + (Math.random() * 6));
+			System.out.printf("%d\n", die);
+			total = total + die;
+
+		}
+		System.out.printf("this is the total %d\n", total);
+	
+		
+		return total;	}
+
+	public int Throw(int bounce) {
+		total = 0;
+		for (int b = bounce; b >0; b--) {
+			int die = (int) (1 + (Math.random() * 6));
+			System.out.printf("%d\n", die);
+			total = total + die;
+
+		}
+		System.out.printf("this is the total %d\n", total);
+		return total;
+	}
+
+	public int total_rolls(int bounces) {
+		int t_rolls = 0;
+		for (int b = bounces; b > 0; b--) {
+			t_rolls = t_rolls + bounces;
+		}
+		System.out.printf("total rolls are %d\n", bounces);
+		return t_rolls;
+
+	}
+	
+	public int Throw(int dice, int Throw){
+		total = 0;
+		int [] array = new int [dice*2];
+		for (int i =0; i<Throw; i++){
+			for (int m = dice; m >0;m--){
+				int roll = 1 + (int)(Math.random()*6);
+				System.out.printf( "dice %d is %d\n",m, dice);
+				total = total + roll;
+				array [dice] = roll;
+			}
+		}
+		System.out.printf("total is %d\n",total);
+		return total;
+	}
+	public int Value()
+	{
+		return x;
+	}
+	@Override
+	public String toString()
+	{
+		return String.format("%s \n %s: %s\n %s: %s\n %s: %s\n ",
+				"this comes from the dice class",
+				"number of dice",x,
+				"number of bounces",y,
+				"current value",z
+				);
+	}
+}

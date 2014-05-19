@@ -1,0 +1,19 @@
+
+public class TrippleDice extends Dice
+{
+	
+	public TrippleDice(int value) {
+		super(value);
+	}
+	
+  	@Override
+  	public String toString()
+	{
+		return String.format("%s \n %s: %s\n %s: %s\n %s: %s\n ",
+				"this comes from the Tripple dice class",
+				"number of dice",x,
+				"number of bounces",y,
+				"current value",z
+				);
+	}
+}
